@@ -18,6 +18,7 @@ function high(x) {
   for (let i = 0; i < arrayOfX.length; i++) {
     currentScore = 0;
     currentWord = arrayOfX[i];
+
     //   make the iteration to each array and add it to the score.
     for (let j = 0; j < arrayOfX[i].length; j++) {
       currentScore += arrayOfX[i][j].charCodeAt(0) - 96;
@@ -31,5 +32,3 @@ function high(x) {
   }
   return maxWord;
 }
-
-console.log(high('man i need a taxi up to ubud'));
